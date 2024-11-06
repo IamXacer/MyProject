@@ -12,7 +12,6 @@ export const MyWork = () => {
                 <div className={style.work}>
                     <Project title={'Project name'} description={'Short Description'}/>
                     <Project title={'Project name'} description={'Short Description'}/>
-
                 </div>
             </div>
 
