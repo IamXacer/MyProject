@@ -1,7 +1,26 @@
+/* Header.module.css */
 .header {
-    height: 80px;
-    background-color: aqua;
-    display: flex ;
-    justify-content: flex-end;
-    align-items:center;
+    background-color: #1b1b1b;
+    display: flex;
+    flex-direction: row; /* Выравнивание по горизонтали */
+    justify-content: space-between; /* Одна слева, другая справа */
+    align-items: center; /* Выровнять по вертикали */
+    padding: 10px;
+}
+
+.signUp {
+    display: flex;
+    flex-direction: column; /* Располагает элементы вертикально */
+    align-items: flex-start;
+}
+
+.signIn {
+    display: flex;
+    flex-direction: column; /* Располагает элементы вертикально */
+    align-items: flex-end;
+    margin-top: 10px; /* Расстояние между SignUp и SignIn */
+}
+.signUp, .signIn {
+    display: flex;
+    flex-direction: column;
 }

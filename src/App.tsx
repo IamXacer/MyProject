@@ -12,9 +12,9 @@ function App() {
     return (
         <div className="App">
             <Header/>
-            <SignUp />
-            <SignIn />
-            <AuthDetails />
+           {/* <SignUp />*/}
+         {/*   <SignIn />*/}
+            {/*<AuthDetails />*/}
             <Main/>
             <Skills/>
             <MyWork/>

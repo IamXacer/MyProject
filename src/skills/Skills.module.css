@@ -1,6 +1,6 @@
 .skillsBlock {
     height: 100vh;
-    background-color: #d8e2ce;
+
 
 }
 
@@ -8,10 +8,12 @@
     flex-direction:column;
     justify-content: flex-start;
     align-items: center;
+    background-color: #d8e2ce;
 }
 
 .title {
     background-color: #bed9be;
+
 
 }
 

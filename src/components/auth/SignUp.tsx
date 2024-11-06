@@ -1,6 +1,7 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { auth } from "../../firebase";
+import style from './sighUp.module.css';
 
 const SignUp: React.FC = () => {
     const [email, setEmail] = useState("");
@@ -29,29 +30,32 @@ const SignUp: React.FC = () => {
     }
 
     return (
-        <div>
+        <div className={style.formContainer}>
+            <h2 className={style.h2}>Create an account</h2>
             <form onSubmit={register}>
-                <h2>Create an account</h2>
                 <input
+                    className={style.inputField}
                     placeholder="Please enter your email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     type="email"
                 />
                 <input
+                    className={style.inputField}
                     placeholder="Please enter your password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     type="password"
                 />
                 <input
+                    className={style.inputField}
                     placeholder="Please enter your password again"
                     value={copyPassword}
                     onChange={(e) => setCopyPassword(e.target.value)}
                     type="password"
                 />
-                <button type="submit">Create</button>
-                {error ? <p style={{ color: "red" }}>{error}</p> : ""}
+                <button className={style.button} type="submit">Create</button>
+                {error && <p className={style.errorMessage}>{error}</p>}
             </form>
         </div>
     );

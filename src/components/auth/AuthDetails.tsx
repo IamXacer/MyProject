@@ -1,9 +1,13 @@
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import React, { useEffect, useState } from "react";
 import { auth } from "../../firebase";
-import { User } from "firebase/auth"; // Импортируем тип User
+import { User } from "firebase/auth";
+import {type} from "os"; // Импортируем тип User
 
-const AuthDetails: React.FC = () => {
+export type AuthDetailsProps ={
+  onSignOut:()=>void
+}
+const AuthDetails: React.FC<AuthDetailsProps> = ({onSignOut}) => {
   const [authUser, setAuthUset] = useState<User | null>(null); // Указываем тип состояния как User | null
 
   useEffect(() => {
@@ -23,6 +27,7 @@ const AuthDetails: React.FC = () => {
     signOut(auth)
         .then(() => console.log("Successfully signed out"))
         .catch((e) => console.log(e));
+    onSignOut()
   }
 
   return (
