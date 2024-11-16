@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/DzIgnat20_08_24-homework-front-main/static/css/main.d01b8573.css",
-    "main.js": "/DzIgnat20_08_24-homework-front-main/static/js/main.111e859f.js",
-    "static/js/453.ed3810f9.chunk.js": "/DzIgnat20_08_24-homework-front-main/static/js/453.ed3810f9.chunk.js",
-    "index.html": "/DzIgnat20_08_24-homework-front-main/index.html",
-    "main.d01b8573.css.map": "/DzIgnat20_08_24-homework-front-main/static/css/main.d01b8573.css.map",
-    "main.111e859f.js.map": "/DzIgnat20_08_24-homework-front-main/static/js/main.111e859f.js.map",
-    "453.ed3810f9.chunk.js.map": "/DzIgnat20_08_24-homework-front-main/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/MyProject/static/css/main.d01b8573.css",
+    "main.js": "/MyProject/static/js/main.ba70bf57.js",
+    "static/js/453.ed3810f9.chunk.js": "/MyProject/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/MyProject/index.html",
+    "main.d01b8573.css.map": "/MyProject/static/css/main.d01b8573.css.map",
+    "main.ba70bf57.js.map": "/MyProject/static/js/main.ba70bf57.js.map",
+    "453.ed3810f9.chunk.js.map": "/MyProject/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d01b8573.css",
-    "static/js/main.111e859f.js"
+    "static/js/main.ba70bf57.js"
   ]
 }
